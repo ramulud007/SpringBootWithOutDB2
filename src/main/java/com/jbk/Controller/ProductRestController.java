@@ -35,7 +35,7 @@ public class ProductRestController {
 
 	@GetMapping("/get-AllProductsList")
 	public Object getAllProducts() {
-
+System.out.println("This method is used to get all product list");
 		List<Product> list = service.getAllProducts();
 
 		if (list.isEmpty()) {
